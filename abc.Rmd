@@ -46,7 +46,7 @@ skuska2 <- skuska[!grepl("Mesiac|Titul|novým", skuska$ac),]
 #skuska3 <- long_panel(skuska2, id = "ac")
 #skuska3<- skuska2 %>%  pivot_longer(everything())
 #skuska3 <- skuska2 %>% melt(id.var= "ac") %>% arrange(ac)
-#skuska3<- skuska2 %>% reshape(
+#skuska3<- skuska2 %>% reshape(f
  #       varying = c(4:27),
   #      direction = "long"
 #)
