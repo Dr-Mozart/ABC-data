@@ -10,7 +10,7 @@ library(lubridate)
 library(panelr)
 
 
-data <- read.xlsx("TVT_2021.xlsx", sheet = 'ABC SR 2021')
+data <- read.xlsx("TVT_2022.xlsx", sheet = 'ABC SR 2021')
 data <- data[-c(1:12),]
 colnames(data) <- c(1:28)
 
@@ -81,4 +81,4 @@ final$Year <- final$Year %>% as.numeric()
 final <- final[, c(1, 3, 2, 4, 5,6)]
 
 
-write.xlsx(final, file = "Print_Radio2.xlsx",overwrite = TRUE, append = TRUE, rowNames = FALSE, showNA = FALSE)
+write.xlsx(final, file = "Print_Radio21.xlsx",overwrite = FALSE, append = TRUE, rowNames = FALSE, showNA = FALSE)
